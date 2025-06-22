@@ -1,14 +1,69 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-BOl7GGk_.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B67c65R0.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dodni-dode 개발 블로그</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--primary:#4e73df;--bg:#f8f9fc;--text:#343a40}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    header{background:var(--primary);padding:1rem 2rem}
+    header h1{color:#fff;font-size:1.5rem}
+    nav ul{list-style:none;display:flex;gap:1rem}
+    nav a{color:#fff;text-decoration:none;font-weight:500}
+    .container{max-width:960px;margin:2rem auto;padding:0 1rem}
+    .hero{padding:4rem 0;text-align:center}
+    .hero h2{font-size:2.5rem;margin-bottom:1rem}
+    .hero p{font-size:1.125rem;color:var(--text)}
+    .posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+    .post{background:#fff;padding:1.5rem;border-radius:0.5rem;box-shadow:0 4px 6px rgba(0,0,0,0.1)}
+    .post h3{margin-bottom:0.5rem;color:var(--primary)}
+    .post p{font-size:0.95rem;color:#6c757d}
+    .post a{display:inline-block;margin-top:1rem;color:var(--primary);text-decoration:none;font-weight:500}
+    footer{text-align:center;padding:1rem 0;background:#e2e6ea;color:#6c757d;margin-top:3rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>dodni-dode 블로그</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h2>개발 이야기와 지식 공유</h2>
+      <p>프론트엔드, 백엔드, DevOps, AI 등 개발 관련 인사이트 제공</p>
+    </section>
+    <section class="posts">
+      <article class="post">
+        <h3>첫 번째 포스트 제목</h3>
+        <p>포스트 요약 문장. 본문 내용을 간략히 소개하는 문장.</p>
+        <a href="#">Read More</a>
+      </article>
+      <article class="post">
+        <h3>두 번째 포스트 제목</h3>
+        <p>포스트 요약 문장. 본문 내용을 간략히 소개하는 문장.</p>
+        <a href="#">Read More</a>
+      </article>
+      <article class="post">
+        <h3>세 번째 포스트 제목</h3>
+        <p>포스트 요약 문장. 본문 내용을 간략히 소개하는 문장.</p>
+        <a href="#">Read More</a>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 dodni-dode. All rights reserved.</p>
+  </footer>
+</body>
 </html>
